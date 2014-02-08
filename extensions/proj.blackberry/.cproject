@@ -38,15 +38,15 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.180334697" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.1660452136" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1503771859" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/include"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/kazmath/include"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/platform"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/platform/blackberry"/>
-									<listOptionValue builtIn="false" value="../../../external/chipmunk/include/chipmunk"/>
-									<listOptionValue builtIn="false" value="../../../external"/>
-									<listOptionValue builtIn="false" value="../../../CocosDenshion/include"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/extensions"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/include"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/kazmath/include"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/platform"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/platform/blackberry"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/external/chipmunk/include/chipmunk"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/external"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/CocosDenshion/include"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 								</option>
@@ -61,15 +61,15 @@
 							<tool id="com.qnx.qcc.tool.assembler.1745423411" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1310984235" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.1121101727" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/include"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/kazmath/include"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/platform"/>
-									<listOptionValue builtIn="false" value="../../../cocos2dx/platform/blackberry"/>
-									<listOptionValue builtIn="false" value="../../../external/chipmunk/include/chipmunk"/>
-									<listOptionValue builtIn="false" value="../../../external"/>
-									<listOptionValue builtIn="false" value="../../../CocosDenshion/include"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/extensions"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/include"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/kazmath/include"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/platform"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/cocos2dx/platform/blackberry"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/external/chipmunk/include/chipmunk"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/external"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/CocosDenshion/include"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 								</option>

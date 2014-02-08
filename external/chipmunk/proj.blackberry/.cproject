@@ -27,7 +27,7 @@
 								<option id="com.qnx.qcc.option.compiler.includePath.839781469" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="../../include/chipmunk/"/>
+									<listOptionValue builtIn="false" value="${COCOS2D_LOC}/external/chipmunk/include/chipmunk/"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.ccoptions.416344414" name="Compiler Options (-Wc,)" superClass="com.qnx.qcc.option.compiler.ccoptions" valueType="stringList">
 									<listOptionValue builtIn="false" value="-std=c99"/>
@@ -87,7 +87,7 @@
 								<option id="com.qnx.qcc.option.compiler.ccoptions.182296748" name="Compiler Options (-Wc,)" superClass="com.qnx.qcc.option.compiler.ccoptions" valueType="stringList">
 									<listOptionValue builtIn="false" value="-std=c99"/>
 								</option>
-								<option id="com.qnx.qcc.option.compiler.qccoptions.1555832227" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
+								<option id="com.qnx.qcc.option.compiler.qccoptions.1555832227" name="QCC Options" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
 									<listOptionValue builtIn="false" value="-fPIC"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.541626312" superClass="com.qnx.qcc.inputType.compiler"/>
