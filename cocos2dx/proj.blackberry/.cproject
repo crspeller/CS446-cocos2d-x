@@ -9,7 +9,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/cocos2dx/Device-Debug"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -22,6 +22,7 @@
 					<folderInfo id="com.qnx.qcc.configuration.sharedLib.debug.855962661." name="/" resourcePath="">
 						<toolChain id="com.qnx.qcc.toolChain.sharedLib.debug.1898644777" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
 							<option id="com.qnx.qcc.option.cpu.1406189566" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
+							<option id="com.qnx.qcc.option.runtime.1580187878" name="Runtime:" superClass="com.qnx.qcc.option.runtime" value="com.qnx.qcc.option.gen.runtime.c++._gpp" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.135938363" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
 							<builder buildPath="${workspace_loc:/cocos2dx/Device-Debug}" id="com.qnx.nto.1068866799" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
 							<tool id="com.qnx.qcc.tool.compiler.1196126338" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
@@ -117,7 +118,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/cocos2dx/Device-Release"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -219,7 +220,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/cocos2dx/Device-Profile"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -324,7 +325,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/cocos2dx/Device-Coverage"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -429,7 +430,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/cocos2dx/Simulator"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -533,7 +534,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/cocos2dx/Simulator-Profile"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -637,7 +638,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/cocos2dx"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/cocos2dx/Simulator-Coverage"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="cocos2dx" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -767,4 +768,5 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

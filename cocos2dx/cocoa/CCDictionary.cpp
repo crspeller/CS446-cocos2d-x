@@ -1,18 +1,18 @@
 /****************************************************************************
  Copyright (c) 2012 - 2013 cocos2d-x.org
- 
+
  http://www.cocos2d-x.org
- 
+
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
- 
+
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
- 
+
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -39,16 +39,16 @@ CCDictElement::CCDictElement(const char* pszKey, CCObject* pObject)
     CCAssert(pszKey && strlen(pszKey) > 0, "Invalid key value.");
     m_iKey = 0;
     const char* pStart = pszKey;
-    
+
     int len = strlen(pszKey);
     if (len > MAX_KEY_LEN )
     {
         char* pEnd = (char*)&pszKey[len-1];
         pStart = pEnd - (MAX_KEY_LEN-1);
     }
-    
+
     strcpy(m_szKey, pStart);
-    
+
     m_pObject = pObject;
     memset(&hh, 0, sizeof(hh));
 }
@@ -96,7 +96,7 @@ CCArray* CCDictionary::allKeys()
     CCDictElement *pElement, *tmp;
     if (m_eDictType == kCCDictStr)
     {
-        HASH_ITER(hh, m_pElements, pElement, tmp) 
+        HASH_ITER(hh, m_pElements, pElement, tmp)
         {
             CCString* pOneKey = new CCString(pElement->m_szKey);
             pArray->addObject(pOneKey);
@@ -105,14 +105,14 @@ CCArray* CCDictionary::allKeys()
     }
     else if (m_eDictType == kCCDictInt)
     {
-        HASH_ITER(hh, m_pElements, pElement, tmp) 
+        HASH_ITER(hh, m_pElements, pElement, tmp)
         {
             CCInteger* pOneKey = new CCInteger(pElement->m_iKey);
             pArray->addObject(pOneKey);
             CC_SAFE_RELEASE(pOneKey);
         }
     }
-    
+
     return pArray;
 }
 
@@ -126,7 +126,7 @@ CCArray* CCDictionary::allKeysForObject(CCObject* object)
 
     if (m_eDictType == kCCDictStr)
     {
-        HASH_ITER(hh, m_pElements, pElement, tmp) 
+        HASH_ITER(hh, m_pElements, pElement, tmp)
         {
             if (object == pElement->m_pObject)
             {
@@ -138,7 +138,7 @@ CCArray* CCDictionary::allKeysForObject(CCObject* object)
     }
     else if (m_eDictType == kCCDictInt)
     {
-        HASH_ITER(hh, m_pElements, pElement, tmp) 
+        HASH_ITER(hh, m_pElements, pElement, tmp)
         {
             if (object == pElement->m_pObject)
             {
@@ -266,7 +266,7 @@ void CCDictionary::removeObjectForKey(const std::string& key)
     {
         return;
     }
-    
+
     CCAssert(m_eDictType == kCCDictStr, "this dictionary doesn't use string as its key");
     CCAssert(key.length() > 0, "Invalid Argument!");
     CCDictElement *pElement = NULL;
@@ -280,7 +280,7 @@ void CCDictionary::removeObjectForKey(intptr_t key)
     {
         return;
     }
-    
+
     CCAssert(m_eDictType == kCCDictInt, "this dictionary doesn't use integer as its key");
     CCDictElement *pElement = NULL;
     HASH_FIND_PTR(m_pElements, &key, pElement);
@@ -324,7 +324,7 @@ void CCDictionary::removeObjectForElememt(CCDictElement* pElement)
 void CCDictionary::removeAllObjects()
 {
     CCDictElement *pElement, *tmp;
-    HASH_ITER(hh, m_pElements, pElement, tmp) 
+    HASH_ITER(hh, m_pElements, pElement, tmp)
     {
         HASH_DEL(m_pElements, pElement);
         pElement->m_pObject->release();
@@ -369,9 +369,9 @@ CCObject* CCDictionary::randomObject()
     {
         return NULL;
     }
-    
+
     CCObject* key = allKeys()->randomObject();
-    
+
     if (m_eDictType == kCCDictInt)
     {
         return objectForKey(((CCInteger*)key)->getValue());

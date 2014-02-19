@@ -112,3 +112,6 @@ tools/jenkins_scripts/mac/android/userconf.ini
 
 # CTags
 tags
+CocosDenshion/proj.blackberry/
+extensions/proj.blackberry/
+external/chipmunk/proj.blackberry/
