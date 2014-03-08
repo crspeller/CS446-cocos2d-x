@@ -2,7 +2,7 @@
 Copyright (c) 2010-2012 cocos2d-x.org
 Copyright (c) 2008-2010 Ricardo Quesada
 Copyright (c) 2011      Zynga Inc.
- 
+
 http://www.cocos2d-x.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -39,7 +39,7 @@ static CCTexture2D* getDefaultTexture()
 {
     CCTexture2D* pTexture = NULL;
     CCImage* pImage = NULL;
-    do 
+    do
     {
         bool bRet = false;
         const char* key = "__firePngData";
@@ -106,7 +106,7 @@ bool CCParticleFire::initWithTotalParticles(unsigned int numberOfParticles)
 
         // Gravity Mode: speed of particles
         this->modeA.speed = 60;
-        this->modeA.speedVar = 20;        
+        this->modeA.speedVar = 20;
 
         // starting angle
         m_fAngle = 90;
@@ -153,7 +153,7 @@ bool CCParticleFire::initWithTotalParticles(unsigned int numberOfParticles)
         {
             setTexture(pTexture);
         }
-        
+
         // additive
         this->setBlendAdditive(true);
         return true;
@@ -728,7 +728,7 @@ CCParticleSpiral* CCParticleSpiral::createWithTotalParticles(unsigned int number
 
 bool CCParticleSpiral::initWithTotalParticles(unsigned int numberOfParticles)
 {
-    if( CCParticleSystemQuad::initWithTotalParticles(numberOfParticles) ) 
+    if( CCParticleSystemQuad::initWithTotalParticles(numberOfParticles) )
     {
         // duration
         m_fDuration = kCCParticleDurationInfinity;
@@ -837,7 +837,7 @@ CCParticleExplosion* CCParticleExplosion::createWithTotalParticles(unsigned int 
 
 bool CCParticleExplosion::initWithTotalParticles(unsigned int numberOfParticles)
 {
-    if( CCParticleSystemQuad::initWithTotalParticles(numberOfParticles) ) 
+    if( CCParticleSystemQuad::initWithTotalParticles(numberOfParticles) )
     {
         // duration
         m_fDuration = 0.1f;
@@ -882,20 +882,20 @@ bool CCParticleExplosion::initWithTotalParticles(unsigned int numberOfParticles)
 
         // color of particles
         m_tStartColor.r = 0.7f;
-        m_tStartColor.g = 0.1f;
-        m_tStartColor.b = 0.2f;
+        m_tStartColor.g = 0.7f;
+        m_tStartColor.b = 0.7f;
         m_tStartColor.a = 1.0f;
-        m_tStartColorVar.r = 0.5f;
-        m_tStartColorVar.g = 0.5f;
-        m_tStartColorVar.b = 0.5f;
+        m_tStartColorVar.r = 0.0f;
+        m_tStartColorVar.g = 0.0f;
+        m_tStartColorVar.b = 0.0f;
         m_tStartColorVar.a = 0.0f;
-        m_tEndColor.r = 0.5f;
-        m_tEndColor.g = 0.5f;
-        m_tEndColor.b = 0.5f;
+        m_tEndColor.r = 0.4f;
+        m_tEndColor.g = 0.4f;
+        m_tEndColor.b = 0.4f;
         m_tEndColor.a = 0.0f;
-        m_tEndColorVar.r = 0.5f;
-        m_tEndColorVar.g = 0.5f;
-        m_tEndColorVar.b = 0.5f;
+        m_tEndColorVar.r = 0.0f;
+        m_tEndColorVar.g = 0.0f;
+        m_tEndColorVar.b = 0.0f;
         m_tEndColorVar.a = 0.0f;
 
         CCTexture2D* pTexture = getDefaultTexture();
@@ -1050,7 +1050,7 @@ CCParticleSnow* CCParticleSnow::createWithTotalParticles(unsigned int numberOfPa
 
 bool CCParticleSnow::initWithTotalParticles(unsigned int numberOfParticles)
 {
-    if( CCParticleSystemQuad::initWithTotalParticles(numberOfParticles) ) 
+    if( CCParticleSystemQuad::initWithTotalParticles(numberOfParticles) )
     {
         // duration
         m_fDuration = kCCParticleDurationInfinity;
