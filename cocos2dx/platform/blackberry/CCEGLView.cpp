@@ -506,6 +506,12 @@ bool CCEGLView::initGL()
         return false;
     }
 
+    // Prevent the backlight from going off
+	int idle_mode = SCREEN_IDLE_MODE_KEEP_AWAKE;
+	if (screen_set_window_property_iv(m_screenWindow, SCREEN_PROPERTY_IDLE_MODE, &idle_mode) != 0) {
+		return EXIT_FAILURE;
+	}
+
     // Create screen event object.
     rc = screen_create_event(&m_screenEvent);
     if (rc)
@@ -596,7 +602,7 @@ bool CCEGLView::handleEvents()
 		// break if no more events
 		if (event == NULL)
 			break;
-			
+
 		if (m_pEventHandler && m_pEventHandler->HandleBPSEvent(event))
 			continue;
 
